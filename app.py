@@ -48,9 +48,10 @@ all_roster_details = []
 
 
 def experience_sorter(player_data):
-    """Sort cleaned player data into equal parts.
+    """
+    Sort cleaned player data into equal parts.
 
-    Sort experienced players vs non-experienced players into equal parts
+    Sort experienced players vs non-experienced players into equal parts.
 
     """
     experienced_players = []
@@ -61,8 +62,7 @@ def experience_sorter(player_data):
             experienced_players.append(player)
         else:
             non_experienced_players.append(player)
-
-    players_per_team = int(len(player) / len(team_data))
+ 
     exp_players_per_team = int(len(experienced_players) / len(team_data))
     non_exp_players_per_team = int(len(non_experienced_players) / len(team_data))
 
@@ -88,11 +88,12 @@ def experience_sorter(player_data):
 
 
 def start():
-    """used to run the program.
+    """
+    Used to run the program.
 
-    it will allow the user to pull team data.
+    It will allow the user to pull team data.
 
-    while viewing team info, using our clean data.
+    While viewing team info, using our clean data.
 
     """
     while True:
@@ -148,7 +149,7 @@ def start():
 
                         # if not, quit.
                         elif show_more.lower() == "n":
-                            print('_____________________\n')
+                            print('\n____________________\n')
                             break
 
                         # generate/print additional details
